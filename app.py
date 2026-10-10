@@ -34,7 +34,6 @@ def run_query(sql, params=(), fetch=None, commit=False):
     finally:
         conn.close()
 
-
 def get_data():
     """JSON sent by the CLI (empty dict if nothing was sent)."""
     return request.get_json(silent=True) or {}
